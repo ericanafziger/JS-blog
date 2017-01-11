@@ -4,7 +4,7 @@
     <li><h2>{{#link-to 'index'}}Home{{/link-to}}</h2></li>
     <li class="side-dropdown"><h2>Info</h2>
       <ul class="side-drop-menu">
-        <li>About</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
         <li>Pricing & Packages</li>
       </ul>
     </li>
@@ -14,9 +14,14 @@
         <li>Portraits</li>
       </ul>
     </li>
-    <li><h2>Contact</h2></li>
+    <li><h2>{{#link-to 'contact'}}Contact{{/link-to}}</h2></li>
     <li><h2>{{#link-to 'blog'}}Blog{{/link-to}}</h2></li>
-  </nav>
+    <li class="side-dropdown"><h2>Portals</h2>
+      <ul class="side-drop-menu">
+        <li>{{#link-to 'user'}}User Portal{{/link-to}}</li>
+        <li>{{#link-to 'admin'}}Admin Portal{{/link-to}}</li>
+      </ul>
+    </li>  </nav>
   <div class="slide-nav-on">
 
   </div>
@@ -29,7 +34,7 @@
         <li class="go-home">{{#link-to 'index'}}Home{{/link-to}}</li>
         <li class="dropdown">Info +
           <ul class="dropdown-menu">
-            <li>About</li>
+            <li>{{#link-to 'about'}}About{{/link-to}}</li>
             <li>Pricing & Packages</li>
           </ul>
         </li>
@@ -38,9 +43,14 @@
             <li>Weddings</li>
             <li>Portraits</li>
           </ul></li>
-        <li>Contact</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
         <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
-        <li>{{#link-to 'admin'}}User Portal{{/link-to}}</li>
+        <li class="dropdown">Portals +
+          <ul class="dropdown-menu">
+            <li>{{#link-to 'user'}}User Portal{{/link-to}}</li>
+            <li>{{#link-to 'admin'}}Admin Portal{{/link-to}}</li>
+          </ul>
+        </li>
       </ul>
       <div class="menu-bars">
         <div class="nav-line"></div>
@@ -52,5 +62,25 @@
     </nav>
 
     {{outlet}}
+
+    <!--=================Start of Footer================-->
+    <div class="footer blog">
+      <div class="item-container">
+        <div class="footer-item">
+          <h4>Stay In Touch</h4>
+          <p><a href="https://www.facebook.com/ericakaitcreative/">facebook</a> | <a href="https://www.instagram.com/ericakait/">instagram</a></p>
+        </div>
+
+        <div class="footer-item">
+          <h4>The Blog</h4>
+          <p><a href="blog.html">go to blog homepage</a></p>
+        </div>
+
+        <div class="footer-item">
+          <h4>Contact</h4>
+          <p><a href="contact.html">let's chat! ></a></p>
+        </div>
+      </div>
+    </div><!--end of footer-->
 
   </div> <!--end of wrap-->
