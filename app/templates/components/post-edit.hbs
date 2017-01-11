@@ -1,0 +1,43 @@
+{{#if showBlogForm}}
+  <form>
+    <label for="title">Title</label>
+    {{input value=post.title id="title"}}
+
+    <label for="place">Place</label>
+    {{input value=post.place id="place"}}
+
+    <label for="type">Type</label>
+    {{input value=post.type id="type"}}
+
+    <label for="date">Date</label>
+    {{input value=post.date id="date"}}
+
+    <label for="text">Text</label>
+    {{textarea value=post.text id="text"}}
+
+    {{#each post.images as |images|}}
+    <label for="images">Image</label>
+    {{input value=images.image}}
+    {{/each}}
+  </form>
+  <button {{action 'hideForm'}}type="button">Cancel</button>
+  <button {{action 'savePost' post}}type="button">Save</button>
+{{else}}
+  <button {{action 'updatePost'}}type="button">Update</button>
+{{/if}}
+<button {{action 'deletePost' post}}type="button">Delete</button>
+
+
+<div class="text">
+  <h2>{{post.title}}</h2>
+  <h5>{{post.place}}</h5>
+  <h4>{{post.type}} - {{post.date}}</h4>
+  <p>{{post.text}}</p>
+</div>
+<div class="image-container">
+  {{#each post.images as |images|}}
+  <div class="image-vertical">
+    <img src={{images.image}}>
+  </div>
+  {{/each}}
+</div>

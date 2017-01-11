@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="content">
+    <h4>Erica Kait Creative</h4>
+
+    <h2>Manage Blog Posts</h2>
+    <form>
+      <button type="button">Create New Post</button>
+    </form>
+    <div class="image-container">
+      {{#each model as |post|}}
+      <div class="image">
+        {{blog-edit post=post}}
+      </div>
+      {{/each}}
+    </div>
+
+  </div>
+</div>

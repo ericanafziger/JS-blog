@@ -4,3 +4,39 @@
   -webkit-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
+
+%button {
+   width: 200px;
+  margin: 10px auto;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: none;
+  border: 1px solid $t-grey;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+  font-family: 'Raleway', sans-serif;
+  margin: 1%;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  height: 40px;
+  font-size: .8em;
+  text-indent: 10px;
+  color: lighten($grey, 30%);
+  &:focus, &:active {
+    outline: none;
+    border: 1px solid $light-grey;
+    background: none;
+  }
+  @media screen and #{$md-break} {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+    background: $grey;
+    color: $white;
+  }
+}
