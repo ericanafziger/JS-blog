@@ -1,0 +1,11 @@
+<h1>Blog</h1>
+
+{{#each model as |post|}}
+  <h3>{{post.title}}</h3>
+  <h4>{{post.place}}</h4>
+  {{#each post.images as |images|}}
+  <img src={{images.image}}>
+  {{/each}}
+
+{{/each}}
+<!-- <img src={{post.images.0.image}}> -->
