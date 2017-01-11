@@ -1,0 +1,6 @@
+<h2>{{model.title}}</h2>
+<h4>{{model.date}}</h4>
+<h3>{{model.place}}</h3>
+{{#each model.images as |images|}}
+<img src={{images.image}}>
+{{/each}}

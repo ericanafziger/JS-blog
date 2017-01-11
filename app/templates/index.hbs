@@ -1,11 +1,15 @@
-<h1>Blog</h1>
+<div class="container">
+  <div class="content">
+    <h4>Erica Kait Creative</h4>
 
-{{#each model as |post|}}
-  <h3>{{post.title}}</h3>
-  <h4>{{post.place}}</h4>
-  {{#each post.images as |images|}}
-  <img src={{images.image}}>
-  {{/each}}
+    <h2>Blog</h2>
+    <div class="image-container">
+      {{#each model as |post|}}
+      <div class="image">
+        {{blog-tile post=post}}
+      </div>
+      {{/each}}
+    </div>
 
-{{/each}}
-<!-- <img src={{post.images.0.image}}> -->
+  </div>
+</div>

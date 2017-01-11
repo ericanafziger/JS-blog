@@ -3,6 +3,7 @@
     "place": "Downtown Portland",
     "date" : "December 2016",
     "type" : "Couples Session",
+    "cover" : "https://ericanafziger.github.io/ericakaitcreative/blog/img/kharis-nick/kn1.jpg",
     "text": "The day of this shoot was the first time I had ever met Kharis and Nick, and boy am I glad they found me! These two are downright adorable and were a delight to spend an afternoon with. We did a little exploring of downtown PDX and Waterfront Park before heading across the Morrison Bridge to catch the last rays of the sun on the water. These two did an awesome job of pretending they weren't cold, despite the fact that this had to have been one of the coldest days of the year. At least it wasn't raining! This shoot was a great reminder of how many awesome spots there are to photograph in central Portland.",
     "images" : [{"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/kharis-nick/kn1.jpg"}, {"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/kharis-nick/kn2.jpg"}, {"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/kharis-nick/kn5.jpg"}, {"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/kharis-nick/kn2.jpg"}]
   }, {
@@ -10,7 +11,16 @@
     "place": "Battle Ground, WA",
     "date" : "October 2016",
     "type" : "Senior Session",
+    "cover" : "https://ericanafziger.github.io/ericakaitcreative/blog/img/mckenna/mj3.jpg",
     "text": "Senior portraits are always such a blast. An hour or two of striking a pose (insert girl raising hand emoji here)! To top it off, I got to do these portraits with my favorite/only sister. We started out on the football field of her school before heading to a nearby park for some nature shots. She also brought along glitter, meaning we were both covered in it by the end of the night. I love the different feels of the two locations and try as I might I can't pick a favorite set.",
     "images" : [{"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/mckenna/mj3.jpg"}, {"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/mckenna/mj1.jpg"}, {"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/mckenna/mj2.jpg"}]
+  }, {
+    "title": "Elopement Styled Shoot",
+    "place": "Columbia River Gorge",
+    "date" : "September 2016",
+    "type" : "Elopement",
+    "cover" : "https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg12.jpg",
+    "text": "This shoot was such a dream and I was very lucky to be able to work with several talented vendors for this project who helped ensure everything came together flawlessly! I planned this shoot with an autumn theme, which meant deep dark colors, moody lighting, and a breathtaking location - everything I would have wanted had my own wedding been in September instead of July. We shot in the Columbia River Gorge which, if you haven’t already noticed, is one of my absolute favorite spots. I wanted to put something together for this shoot that had a simple, almost vintage aesthetic. Everyone who participated was from Portland (or just outside) in an effort to keep things close to home and support local small businesses.",
+    "images" : [{"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg"}, {"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg25.jpg"}, {"image": "https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg27.jpg"}]
   }]
 }

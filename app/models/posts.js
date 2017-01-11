@@ -5,6 +5,7 @@ export default DS.Model.extend({
   place: DS.attr(),
   date: DS.attr(),
   type: DS.attr(),
+  cover: DS.attr(),
   text: DS.attr(),
   images: DS.attr()
 });
