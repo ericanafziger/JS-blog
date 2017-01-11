@@ -1,0 +1,57 @@
+<!--=================Start of Side Nav================-->
+
+  <nav class="side-nav">
+    <li><h2>{{#link-to 'index'}}Home{{/link-to}}</h2></li>
+    <li class="side-dropdown"><h2>Info</h2>
+      <ul class="side-drop-menu">
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing & Packages</a></li>
+      </ul>
+    </li>
+    <li class="side-dropdown"><h2>Work</h2>
+      <ul class="side-drop-menu">
+        <li><a href="wedding-portfolio.html">Weddings</a></li>
+        <li><a href="portrait-portfolio.html">Portraits</a></li>
+      </ul>
+    </li>
+    <li><h2><a href="contact.html">Contact</a></h2></li>
+    <li><h2><a href="blog.html">Blog</a></h2></li>
+  </nav>
+  <div class="slide-nav-on">
+
+  </div>
+
+  <div class="wrap">
+
+    <!--==================Start of Nav====================-->
+    <nav class="nav-main">
+      <ul>
+        <li class="go-home">{{#link-to 'index'}}Home{{/link-to}}</li>
+        <li class="dropdown">Info +
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricing.html">Pricing & Packages</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">Work +
+          <ul class="dropdown-menu">
+            <li><a href="wedding-portfolio.html">Weddings</a></li>
+            <li><a href="portrait-portfolio.html">Portraits</a></li>
+          </ul></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="menu-bars">
+        <div class="nav-line"></div>
+        <div class="nav-line"></div>
+        <div class="nav-line"></div>
+      </div>
+      <h4 class="title">Erica Kait <em>Creative</em></h4>
+      <div class="bottom-border"></div>
+    </nav>
+
+
+
+    {{outlet}}
+
+  </div> <!--end of wrap-->
