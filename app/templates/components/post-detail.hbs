@@ -1,0 +1,12 @@
+<div class="text">
+  <h2>{{post.title}}</h2>
+  <h5>{{post.place}}</h5>
+  <h4>{{post.type}} - {{post.date}}</h4>
+</div>
+<div class="image-container">
+  {{#each post.images as |images|}}
+  <div class="image-vertical">
+    <img src={{images.image}}>
+  </div>
+  {{/each}}
+</div>

@@ -1,0 +1,76 @@
+.container {
+  max-width: 1000px; /*changes max width of images on page*/
+  margin: 0 auto;
+  .content {
+    max-width: 100%;
+    top: 0;
+    width: 100%;
+    a {
+      text-decoration: none;
+    }
+    .text {
+      margin: 0 auto;
+      max-width: $max-width;
+      padding: 35px;
+      h4 {
+        margin-bottom: 15px;
+      }
+      h5 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 0px;
+        max-width: 900px;
+      }
+    }
+    .prev-next {
+      width: 50%;
+      position: relative;
+      margin-top: 40px;
+      h2 {
+        white-space: nowrap;
+        font-family: serif;
+        &:hover {
+          color: $light-grey;
+        }
+        @media screen and #{$md-break} {
+          font-size: 1.3em;
+          margin-bottom: 0px;
+        }
+        @media screen and #{$sm-break} {
+          font-size: 1em;
+          border: none;
+          margin: 0;
+        }
+      }
+      p {
+        @media screen and #{$sm-break} {
+          display: none;
+        }
+      }
+    }
+    .image-container {
+      .image-horizontal, .image-vertical {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 2.5px 5px;
+        img {
+          max-height: 100%;
+          max-width: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+             object-fit: cover;
+        }
+      }
+      .image-vertical {
+        width: 50%;
+        @media screen and #{$md-break} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

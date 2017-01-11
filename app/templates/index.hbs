@@ -1,15 +1,107 @@
-<div class="container">
-  <div class="content">
-    <h4>Erica Kait Creative</h4>
+<!--=================Start of Hero Slideshow================-->
+  <div id="top-of-page"></div>
+  <div class="home-container">
 
-    <h2>Blog</h2>
-    <div class="image-container">
-      {{#each model as |post|}}
-      <div class="image">
-        {{blog-tile post=post}}
-      </div>
-      {{/each}}
+    <div class="small-screen-arrows">
+      <i class="fa fa-angle-left left-controll fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-angle-right right-controll fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="images">
+      <img class="1 active" src="https://ericanafziger.github.io/ericakaitcreative/blog/img/itchelle/im23.jpg" alt="Itchelle at Cape Kiwanda">
+      <img class="2" src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Columbia River Gorge Elopement">
+      <img class="3" src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Kortney at Rooster Rock">
+      <img class="4" src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Kharis and Nick in downtown Portland">
+      <img class="5" src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Elisabeth in the Columbia River Gorge">
+      <img class="6" src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Erin and Landon New Hampshire wedding">
     </div>
 
-  </div>
-</div>
+    <!--=================Start of Hero Text================-->
+    <div class="text-contain">
+      <div class="hero-text">
+        <img src="https://ericanafziger.github.io/ericakaitcreative/img/web-title.png" alt="Erica Kait Creative">
+        <div class="secondary-text">
+          <h4>Portland, OR</h4>
+          <div class="large-screen-arrows">
+            <i class="fa fa-angle-left left-controll fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-angle-right right-controll fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="circles">
+            <i class="fa fa-circle-o fa-circle 1" aria-hidden="true"></i>
+            <i class="fa fa-circle-o 2" aria-hidden="true"></i>
+            <i class="fa fa-circle-o 3" aria-hidden="true"></i>
+            <i class="fa fa-circle-o 4" aria-hidden="true"></i>
+            <i class="fa fa-circle-o 5" aria-hidden="true"></i>
+            <i class="fa fa-circle-o 6" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more">
+      <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+    </div>
+  </div> <!--end of container-->
+
+
+  <!--=================Start of Section Two================-->
+  <div class="section-two">
+
+    <div class="module-container">
+      <div class="module">
+        <img src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Ariel Washington Wedding">
+        <div class="hidden-module-text">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+          <h2>{{#link-to 'blog'}}visit{{/link-to}}</h2>
+          <div class="line"></div>
+          <h5>{{#link-to 'blog'}}the blog{{/link-to}}</h5>
+        </div>
+      </div>
+
+      <div class="module">
+        <img src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Elisabeth at Oneonta Gorge">
+        <div class="hidden-module-text">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+          <h2><a href="portrait-portfolio.html">view</a></h2>
+          <div class="line"></div>
+          <h5><a href="portrait-portfolio.html">portrait portfolio</a></h5>
+        </div>
+      </div>
+
+      <div class="module">
+        <img src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Wahclella Falls Elopement Shoot">
+        <div class="hidden-module-text">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+          <h2>view</h2>
+          <div class="line"></div>
+          <h5>wedding portfolio</h5>
+        </div>
+      </div>
+
+    </div><!--end of module container-->
+
+    <div class="module-container">
+
+      <div class="module-large">{{#link-to 'blog'}}
+        <div class="module-text">
+          <h2>About</h2>
+          <div class="line"></div>
+          <h5>the photographer</h5>
+        </div>
+        <img src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Cape Kiwanda Beach">{{/link-to}}
+      </div>
+
+      <div class="module-large">{{#link-to 'blog'}}
+        <div class="module-text">
+          <h2>Pricing</h2>
+          <div class="line"></div>
+          <h5>& packages</h5>
+        </div>
+        <img src="https://ericanafziger.github.io/ericakaitcreative/blog/img/crg/crg20.jpg" alt="Cape Kiwanda Dunes">{{/link-to}}
+      </div>
+
+    </div>
+    <div class="top">
+      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    </div>
+
+  </div><!--end of section-two-->

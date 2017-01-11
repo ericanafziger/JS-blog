@@ -1,0 +1,27 @@
+.content {
+  h2 {
+    margin: 0 auto;
+    border-bottom: 1px solid $t-grey;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: .85em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+  }
+  img {
+    max-width: 90%;
+  }
+  .top {
+    color: $grey;
+    -webkit-transition: color ease-in-out 100ms;
+    transition: color ease-in-out 100ms;
+    margin: 40px auto 0px;
+    &:hover {
+      color: $t-grey;
+    }
+  }
+}
