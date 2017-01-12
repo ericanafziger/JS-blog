@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         }
       });
       post.save();
-      this.transitionTo('edit');
+      this.transitionTo('manage-blog');
     },
     deletePost(post) {
       post.destroyRecord();

@@ -8,7 +8,7 @@ export default Ember.Component.extend({
       this.set('showBlogForm', true);
     },
     addImage() {
-      $('form').append('<label>New Image</label><input value=post.images id="newImage" placeholder="image URL">');
+      $('form').append('<label>New Image</label><input class="newImage" type="new" placeholder="image URL">');
     },
     hideForm() {
       this.set('showBlogForm', false);
@@ -18,10 +18,16 @@ export default Ember.Component.extend({
     },
     savePost(post) {
       debugger;
-      console.log(this.get('post.images'));
+      var newImage = Ember.$('.newImage').map( function(){return Ember.$(this).val(); }).get();
+      var imagesArray = this.get('post.images');
+      newImage.forEach(function(photo){
+        var object = {image: photo};
+        imagesArray.push(object);
+      });
+      console.log(imagesArray);
       var params = {
-        images: this.get('post.images'),
-        newImages: this.get('newImage'), //not working
+        images: imagesArray,
+        // newImage: document.getElementById('new').value, //not working
         place: this.get('post.place'),
         title: this.get('post.title'),
         type: this.get('post.type'),
