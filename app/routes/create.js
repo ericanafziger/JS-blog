@@ -6,10 +6,9 @@ export default Ember.Route.extend({
   },
   actions: {
     addImage() {
-      $('form').append('<label>New Image</label><input class="newImage" type="new" placeholder="image URL">');
+      Ember.$('form').append('<label>New Image</label><input class="newImage" type="new" placeholder="image URL">');
     },
     createPost() {
-      debugger;
       var newImage = Ember.$('.newImage').map( function(){return Ember.$(this).val(); }).get();
       var imagesArray = [];
       newImage.forEach(function(photo){
@@ -23,7 +22,7 @@ export default Ember.Route.extend({
         date: Ember.$('#date').val(),
         type: Ember.$('#type').val(),
         text: Ember.$('#text').val(),
-        cover: Ember.$('#cover').val()
+        cover: Ember.$('#cover').val(),
       };
       var newPost = this.store.createRecord('post', params);
       newPost.save();

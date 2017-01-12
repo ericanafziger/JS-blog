@@ -1,13 +1,13 @@
 <!--nested in Post-->
 <h2>Comments</h2>
-{{#each model as |comment|}}
-<p>{{comment.name}}</p>
-<p>{{comment.text}}</p>
+{{#each model.comments as |comments|}}
+  <h4 class="name">{{comments.name}}</h4>
+  <p class="comment">{{comments.comment}}</p>
 {{/each}}
 
-<h4>Leave your comment:</h4>
+<h5>Leave your comment:</h5>
 <form class="comments">
     {{input value=name type="text" id="name" placeholder="Your name"}}
-    {{textarea type="text" placeholder="Comment text"}}
-    <button {{action 'submitComment'}} type="button">Submit Comment</button>
+    {{textarea type="text" id="comment" placeholder="Comment text"}}
+    <button {{action 'submitComment' model}} type="button">Submit Comment</button>
 </form>

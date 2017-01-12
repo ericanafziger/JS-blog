@@ -7,5 +7,6 @@ export default DS.Model.extend({
   type: DS.attr(),
   cover: DS.attr(),
   text: DS.attr(),
-  images: DS.attr()
+  images: DS.attr(),
+  comments: DS.attr()
 });
