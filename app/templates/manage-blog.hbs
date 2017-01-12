@@ -4,7 +4,7 @@
 
     <h2>Manage Blog Posts</h2>
     <form>
-      <button type="button">Create New Post</button>
+      <button type="button">{{#link-to 'create'}}Create New Post{{/link-to}}</button>
     </form>
     <div class="image-container">
       {{#each model as |post|}}

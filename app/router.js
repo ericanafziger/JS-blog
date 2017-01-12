@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('user');
   this.route('manage-blog');
   this.route('edit', {path: '/edit/:post_id'});
+  this.route('create');
 });
 
 export default Router;

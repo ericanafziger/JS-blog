@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="content">
+    <h2>Create Blog Post</h2>
+    {{#link-to 'manage-blog'}}<h4>Back to Manage Blog Posts</h4>{{/link-to}}
+    <br>
+    <form>
+  {{input value=title id="title" placeholder="Title"}}
+  {{input placeholder="Place" id="place" value=place}}
+  {{input placeholder="Type of shoot" id="type" value=type}}
+  {{input placeholder="Date" id="date" value=date}}
+  {{input value=cover id="cover" placeholder="Cover image"}}
+
+  {{textarea placeholder="Text content" id="text" value=text}}
+
+  <label for="images">New Image</label>
+  {{input placeholder="image URL" type="new" class="newImage"}}
+
+
+</form>
+    <button {{action 'addImage'}}type="button">Add Image</button>
+    <button {{action 'createPost'}}type="button">Create Post</button>
+  </div>
+</div>

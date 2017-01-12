@@ -13,18 +13,13 @@ export default Ember.Component.extend({
     hideForm() {
       this.set('showBlogForm', false);
     },
-    addImageInput() {
-      this.set('addImageInput', true);
-    },
     savePost(post) {
-      debugger;
       var newImage = Ember.$('.newImage').map( function(){return Ember.$(this).val(); }).get();
       var imagesArray = this.get('post.images');
       newImage.forEach(function(photo){
         var object = {image: photo};
         imagesArray.push(object);
       });
-      console.log(imagesArray);
       var params = {
         images: imagesArray,
         // newImage: document.getElementById('new').value, //not working
