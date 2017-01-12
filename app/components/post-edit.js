@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   showBlogForm: false,
+  addImageInput: false,
   actions : {
     updatePost() {
       this.set('showBlogForm', true);
@@ -9,8 +10,10 @@ export default Ember.Component.extend({
     hideForm() {
       this.set('showBlogForm', false);
     },
+    addImageInput() {
+      this.set('addImageInput', true);
+    },
     savePost(post) {
-      debugger;
       var params = {
         images: this.get('post.images'),
         place: this.get('post.place'),

@@ -7,14 +7,16 @@ export default Ember.Route.extend({
   actions : {
     savePost(post, params) {
       Object.keys(params).forEach(function(key){
-        debugger;
         if(params[key] !==undefined) {
-          debugger;
           post.set(key, params[key]);
         }
       });
       post.save();
       this.transitionTo('edit');
+    },
+    deletePost(post) {
+      post.destroyRecord();
+      this.transitionTo('manage-blog');
     }
   }
 });
