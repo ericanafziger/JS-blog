@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('posts', params.post_id);
+    return this.store.findRecord('post', params.post_id);
   },
   actions : {
     savePost(post, params) {
@@ -16,6 +16,19 @@ export default Ember.Route.extend({
     },
     deletePost(post) {
       post.destroyRecord();
+      this.transitionTo('manage-blog');
+    },
+    deleteImage(photo) {
+      alert("delete functionality not currently working");
+      // this.store.findRecord('posts', { title: "Kortney" }).then(function(response) {
+      //   response.destroyRecord();
+      // });
+      // this.store.query('posts', { filter: { "images": photo  }}).then(function(image) {
+      //   debugger;
+      //   image.deleteRecord();
+      //   image.get('isDeleted');
+      //   image.save();
+      // });
       this.transitionTo('manage-blog');
     }
   }

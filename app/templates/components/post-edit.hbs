@@ -19,6 +19,7 @@
     {{#each post.images as |images|}}
     <label for="images">Image</label>
     {{input value=images.image}}
+    <button {{action 'deleteImage' images.image}} type="button">Delete</button>
     {{/each}}
 
 

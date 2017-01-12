@@ -22,7 +22,6 @@ export default Ember.Component.extend({
       });
       var params = {
         images: imagesArray,
-        // newImage: document.getElementById('new').value, //not working
         place: this.get('post.place'),
         title: this.get('post.title'),
         type: this.get('post.type'),
@@ -35,6 +34,12 @@ export default Ember.Component.extend({
     deletePost(post) {
       if (confirm('Are you sure you want to delete this post?')) {
         this.sendAction('deletePost', post);
+      }
+    },
+    deleteImage(photo) {
+      var image = {image: photo};
+      if (confirm('Are you sure you want to delete this image?')) {
+        this.sendAction('deleteImage', image);
       }
     }
   }
