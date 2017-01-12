@@ -7,6 +7,9 @@ export default Ember.Component.extend({
     updatePost() {
       this.set('showBlogForm', true);
     },
+    addImage() {
+      $('form').append('<label>New Image</label><input value=post.images id="newImage" placeholder="image URL">');
+    },
     hideForm() {
       this.set('showBlogForm', false);
     },
@@ -14,8 +17,11 @@ export default Ember.Component.extend({
       this.set('addImageInput', true);
     },
     savePost(post) {
+      debugger;
+      console.log(this.get('post.images'));
       var params = {
         images: this.get('post.images'),
+        newImages: this.get('newImage'), //not working
         place: this.get('post.place'),
         title: this.get('post.title'),
         type: this.get('post.type'),

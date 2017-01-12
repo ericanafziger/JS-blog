@@ -1,5 +1,8 @@
 <div class="container">
   <div class="content">
+    <h2>Edit Post</h2>
+    {{#link-to 'manage-blog'}}<h4>Back to Manage Blog Posts</h4>{{/link-to}}
+    <br>
     {{post-edit post=model savePost="savePost" deletePost="deletePost"}}
   </div>
 </div>

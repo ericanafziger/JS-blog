@@ -21,15 +21,15 @@
     {{input value=images.image}}
     {{/each}}
 
+
   </form>
+  <button {{action 'addImage'}}type="button">Add Image</button>
   <button {{action 'hideForm'}}type="button">Cancel</button>
   <button {{action 'savePost' post}}type="button">Save</button>
 {{else}}
   <button {{action 'updatePost'}}type="button">Update</button>
 {{/if}}
 <button {{action 'deletePost' post}}type="button">Delete</button>
-
-
 <div class="text">
   <h2>{{post.title}}</h2>
   <h5>{{post.place}}</h5>
