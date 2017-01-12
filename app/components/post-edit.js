@@ -9,22 +9,22 @@ export default Ember.Component.extend({
     hideForm() {
       this.set('showBlogForm', false);
     },
-    savePost() {
+    savePost(post) {
       debugger;
       var params = {
         images: this.get('post.images'),
-        title: this.get('post.title'),
         place: this.get('post.place'),
+        title: this.get('post.title'),
         type: this.get('post.type'),
         date: this.get('post.date'),
         text: this.get('post.text'),
       };
       this.set('showBlogForm', false);
-      this.sendAction('savePost', params);
+      this.sendAction('savePost', post, params);
     },
     deletePost(post) {
       if (confirm('Are you sure you want to delete this post?')) {
-        this.sendAction('destroyRental', post);
+        this.sendAction('deletePost', post);
       }
     }
   }
